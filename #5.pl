@@ -1,0 +1,6 @@
+ /*Write a Prolog program to implement GCD of two numbers.*/
+ gcd(X,Y):-X=Y,write('GCD of two numbers is '),write(X);
+ X=0,write('GCD of two numbers is '),write(Y);
+ Y=0,write('GCD of two numbers is '),write(X);
+ Y>X,Y1 is Y-X,gcd(X,Y1);
+ X>Y,Y1 is X-Y,gcd(Y1,Y).
